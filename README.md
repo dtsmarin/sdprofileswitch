@@ -57,3 +57,7 @@ streamdeckws <message string>
 ```bash
 [pathToYourRustExecutable]/streamdeckws <message string>
 ```
+
+I'll have to update the plugin to use the new SDK 0.2.0 because there are some useful features to explore:
+<https://github.com/elgatosf/streamdeck/blob/main/CHANGELOG.md>
+
