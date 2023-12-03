@@ -1,0 +1,58 @@
+{
+  "Name": "Profile Switch",
+  "Version": "0.1.0",
+  "Author": "dtsmarin",
+  "Actions": [
+    {
+      "Name": "Counter",
+      "UUID": "com.example.profile-switch.increment",
+      "Icon": "imgs/actions/counter/icon",
+      "Tooltip": "Displays a count, which increments by one on press.",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/counter/key",
+          "TitleAlignment": "middle"
+        }
+      ]
+    }
+  ],
+  "Category": "Profile Switch",
+  "CategoryIcon": "imgs/plugin/category-icon",
+  "CodePath": "bin/plugin.js",
+  "Description": "A profile switcher that accepts external WebSocket messages",
+  "Icon": "imgs/plugin/marketplace",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "6.4"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.15"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  },
+  "UUID": "com.example.profile-switch",
+  "Profiles": [
+    {
+      "Name": "Profile 1",
+      "DeviceType": 7
+    },
+    {
+      "Name": "Profile 2",
+      "DeviceType": 7
+    },
+    {
+      "Name": "Profile 3",
+      "DeviceType": 7
+    }
+  ]
+}
