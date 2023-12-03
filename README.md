@@ -2,13 +2,13 @@ A simple **proof of concept** plugin for switching profiles with WebSocket messa
 
 ### Clone the repo
 
-```shell
+```bash
 git clone https://github.com/dtsmarin/sdprofileswitch
 ```
 
 ### Install dependencies
 
-```shell
+```bash
 npm install
 ```
 
@@ -16,7 +16,7 @@ npm install
 
 Create a SymLink of your plugin folder inside the Stream Deck's `Plugins` folder.
 
-```shell
+```bash
 ln -s $(pwd)/com.example.profile-switch.sdPlugin ~/Library/Application\ Support/com.elgato.StreamDeck/Plugins/
 ```
 
@@ -38,13 +38,13 @@ When the plugin receives any WebSocket message that matches any of the switch ca
 
 This specific code is not neccesary, you can use anything that works in a similar way (Basic WebSocket client). I'm not a Rust expert.
 
-```shell
+```bash
 cargo build --release
 ```
 
 Usage:
 
-```shell
+```bash
 streamdeckws <message string>
 ```
 
@@ -54,6 +54,6 @@ streamdeckws <message string>
 - To avoid sending to the WebSocket server when it doesn't exist add as a condition: `This application:` -> `Elgato Stream Deck` -> `is running`
 - Inside the `execute the following actions` branch add an `Execute Shell Script` block.
 
-```shell
+```bash
 [pathToYourRustExecutable]/streamdeckws <message string>
 ```
